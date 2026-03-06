@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import ProtectedRoute from "./common/ProtectRoutes";
-import CommonLayouts from "./common/commonLayouts";
+import CommonLayouts from "./common/CommonLayouts";
 import CommonLayoutOutlet from "./common/CommonLayoutOutlet";
 import AdminIndex from "./common/AdminIndex";
 import { SocketProvider } from "./common/Socket";

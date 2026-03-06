@@ -48,7 +48,7 @@ const decodeHTMLEntities = (text) => {
     "&prime;": "′",
     "&Prime;": "″",
     "&lsquo;": "'",
-    "&rsquo;": "'",
+
     "&ldquo;": '"',
     "&rdquo;": '"',
     "&laquo;": "«",

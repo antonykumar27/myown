@@ -1,8 +1,7 @@
-
 // };
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
-import { useAuth } from "../../../../LmsProject/lms-project/src/common/AuthContext";
+import { useAuth } from "../common/AuthContext";
 
 const SocketContext = createContext(null);
 export const useSocket = () => useContext(SocketContext);

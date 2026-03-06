@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.darak, .dark *));
+/* Add to your global CSS */
+.gradient-border {
+  position: relative;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  padding: 2px;
+  border-radius: 1rem;
+}
+
+.gradient-border > div {
+  background: white;
+  border-radius: 0.9rem;
+  height: 100%;
+  width: 100%;
+}
+
+.dark .gradient-border > div {
+  background: #1f2937;
+}

@@ -134,7 +134,7 @@ const uploadFileToCloudinary = async (file, retries = 3) => {
       };
     } catch (error) {
       console.log(`❌ Attempt ${i + 1} failed:`, error.message);
-      console.log(`❌ Error details:`, error);
+      console.log(`❌ Error detailsgggg:`, error);
 
       if (i === retries - 1) {
         console.error(

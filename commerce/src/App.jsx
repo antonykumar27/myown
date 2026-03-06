@@ -10,7 +10,7 @@ import AdminIndex from "./common/AdminIndex";
 import { SocketProvider } from "./common/Socket";
 import TextBookCreateWithSomeLogic from "./textBook/TextBookCreateWithSomeLogic";
 import EcahTextBookPage from "./textBook/EcahTextBookPage";
-import ContentCreate from "./textBook/contentCreate";
+import ContentCreate from "./textBook/ContentCreate";
 import ContentDisplay from "./textBook/ContentDisplay";
 import Dashboard from "./task/Dashboard";
 import Projects from "./task/Projects";

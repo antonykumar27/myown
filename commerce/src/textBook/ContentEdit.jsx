@@ -1626,7 +1626,7 @@ $$
                 </span>
               </div>
 
-              <div className="prose dark:prose-invert max-w-none h-[600px] overflow-y-auto p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+              <div className="relative">
                 <ReactMarkdown
                   remarkPlugins={[remarkMath, remarkGfm]}
                   rehypePlugins={[

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Menu, X, Moon, Sun } from "lucide-react";
-import AccountingSideBarMobile from "./CommonSidebar";
+import CommonSidebarMobile from "./CommonSidebarMobile";
 
 function CommonMobileTopBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,7 +79,7 @@ function CommonMobileTopBar() {
 
       {/* Mobile Sidebar (Only renders when open) */}
       {menuOpen && (
-        <AccountingSideBarMobile
+        <CommonSidebarMobile
           isSidebarOpen={menuOpen}
           toggleSidebar={toggleSidebar}
         />

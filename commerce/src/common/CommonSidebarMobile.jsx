@@ -7,6 +7,7 @@ import { getSidebarLinksMobiles } from "./commonIndex";
 import { BarChart2, X, LogOut, ChevronDown, ChevronUp } from "lucide-react";
 
 const CommonSidebarMobile = ({ isSidebarOpen, toggleSidebar }) => {
+  console.log("hai clickkkk ok work ketta");
   const { user, logout } = useAuth();
   const navigate = useNavigate();
   const sidebarLinks = getSidebarLinksMobiles();

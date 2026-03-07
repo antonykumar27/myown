@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 
-import CommonLayoutsSidebar from "./CommonSidebar";
-import QuizeSideBarMobile from "./CommonSidebarMobile";
-import CommonMobileTopBar from "./CommonMobileTopBar";
+import CommonLayoutsSidebar from "../common/CommonSidebar";
+import QuizeSideBarMobile from "../common/CommonSidebarMobile";
+import CommonMobileTopBar from "../common/CommonMobileTopBar";
 
 const CommonLayouts = ({ isSidebarOpen, toggleSidebar }) => {
   return (

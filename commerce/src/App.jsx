@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import ProtectedRoute from "./common/ProtectRoutes";
-import CommonLayouts from "./common/CommonLayouts";
+
 import CommonLayoutOutlet from "./common/CommonLayoutOutlet";
 import AdminIndex from "./common/AdminIndex";
 import { SocketProvider } from "./common/Socket";
@@ -19,6 +19,7 @@ import Calendar from "./task/Calendar";
 import Notes from "./task/Notes";
 import Settings from "./task/Settings";
 import ContentEdit from "./textBook/ContentEdit";
+import CommomLayout from "./common/CommomLayout";
 const Loader = () => (
   <div className="flex items-center justify-center min-h-screen">
     <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
@@ -42,10 +43,14 @@ function App() {
                 path="/adminSelf"
                 element={
                   <ProtectedRoute>
-                    <CommonLayouts />
+                    <CommomLayout />
                   </ProtectedRoute>
                 }
               >
+                <Route
+                  path="displayContentPage/:id"
+                  element={<ContentDisplay />}
+                />
                 <Route element={<CommonLayoutOutlet />}>
                   <Route index element={<TextBookCreateWithSomeLogic />} />
                   <Route
@@ -56,10 +61,7 @@ function App() {
                     path="createContentPage/:id"
                     element={<ContentCreate />}
                   />
-                  <Route
-                    path="displayContentPage/:id"
-                    element={<ContentDisplay />}
-                  />
+
                   <Route path="contentEdit/:id" element={<ContentEdit />} />
                   {/* "  //////////////////task details/////////////" */}
                   <Route path="dashboard" element={<Dashboard />} />

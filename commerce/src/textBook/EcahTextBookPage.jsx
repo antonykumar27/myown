@@ -555,7 +555,7 @@ const EcahTextBookPage = () => {
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300 ${
+      className={` transition-colors duration-300 ${
         darkMode
           ? "dark bg-gray-900 text-white"
           : "bg-gradient-to-br from-gray-50 via-white to-blue-50/30 text-gray-900"
